@@ -27,35 +27,35 @@ module ActiveAttr
 
     describe "#typecaster_for" do
       it "returns BigDecimalTypecaster for BigDecimal" do
-        model.typecaster_for(BigDecimal).should be_a_kind_of Typecasting::BigDecimalTypecaster
+        model.typecaster_for(BigDecimal).should eq Typecasting::BigDecimalTypecaster
       end
 
       it "returns BooleanTypecaster for Boolean" do
-        model.typecaster_for(Typecasting::Boolean).should be_a_kind_of Typecasting::BooleanTypecaster
+        model.typecaster_for(Typecasting::Boolean).should eq Typecasting::BooleanTypecaster
       end
 
       it "returns DateTypecaster for Date" do
-        model.typecaster_for(Date).should be_a_kind_of Typecasting::DateTypecaster
+        model.typecaster_for(Date).should eq Typecasting::DateTypecaster
       end
 
       it "returns DateTypecaster for Date" do
-        model.typecaster_for(DateTime).should be_a_kind_of Typecasting::DateTimeTypecaster
+        model.typecaster_for(DateTime).should eq Typecasting::DateTimeTypecaster
       end
 
       it "returns FloatTypecaster for Float" do
-        model.typecaster_for(Float).should be_a_kind_of Typecasting::FloatTypecaster
+        model.typecaster_for(Float).should eq Typecasting::FloatTypecaster
       end
 
       it "returns IntegerTypecaster for Integer" do
-        model.typecaster_for(Integer).should be_a_kind_of Typecasting::IntegerTypecaster
+        model.typecaster_for(Integer).should eq Typecasting::IntegerTypecaster
       end
 
       it "returns StringTypecaster for String" do
-        model.typecaster_for(String).should be_a_kind_of Typecasting::StringTypecaster
+        model.typecaster_for(String).should eq Typecasting::StringTypecaster
       end
 
       it "returns ObjectTypecaster for Object" do
-        model.typecaster_for(Object).should be_a_kind_of Typecasting::ObjectTypecaster
+        model.typecaster_for(Object).should eq Typecasting::ObjectTypecaster
       end
     end
   end

@@ -20,7 +20,7 @@ module ActiveAttr
       # @return [Integer, nil] The result of typecasting
       #
       # @since 0.5.0
-      def call(value)
+      def self.call(value)
         value.to_i if value.respond_to? :to_i
       rescue FloatDomainError
       end

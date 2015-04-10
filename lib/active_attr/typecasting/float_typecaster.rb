@@ -19,7 +19,7 @@ module ActiveAttr
       # @return [Float, nil] The result of typecasting
       #
       # @since 0.5.0
-      def call(value)
+      def self.call(value)
         value.to_f if value.respond_to? :to_f
       end
     end

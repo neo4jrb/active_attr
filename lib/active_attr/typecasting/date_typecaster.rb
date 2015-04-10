@@ -22,7 +22,7 @@ module ActiveAttr
       # @return [Date, nil] The result of typecasting
       #
       # @since 0.5.0
-      def call(value)
+      def self.call(value)
         value.to_date if value.respond_to? :to_date
       rescue NoMethodError, ArgumentError
       end

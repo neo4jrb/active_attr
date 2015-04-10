@@ -4,7 +4,7 @@ require "active_attr/typecasting/object_typecaster"
 module ActiveAttr
   module Typecasting
     describe ObjectTypecaster do
-      subject(:typecaster) { described_class.new }
+      subject(:typecaster) { described_class }
 
       describe "#call" do
         it "returns the original object for any object" do

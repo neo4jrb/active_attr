@@ -24,7 +24,7 @@ module ActiveAttr
       # @return [BigDecimal, nil] The result of typecasting
       #
       # @since 0.5.0
-      def call(value)
+      def self.call(value)
         if value.is_a? BigDecimal
           value
         elsif value.is_a? Rational

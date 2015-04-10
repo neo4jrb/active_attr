@@ -4,7 +4,7 @@ require "active_attr/typecasting/string_typecaster"
 module ActiveAttr
   module Typecasting
     describe StringTypecaster do
-      subject(:typecaster) { described_class.new }
+      subject(:typecaster) { described_class }
 
       describe "#call" do
         it "returns the original string for a String" do
