@@ -31,7 +31,7 @@ module ActiveAttr
       # @return [true, false] The result of typecasting
       #
       # @since 0.5.0
-      def call(value)
+      def self.call(value)
         case value
         when *FALSE_VALUES then false
         when Numeric, /^\-?[0-9]/ then !value.to_f.zero?

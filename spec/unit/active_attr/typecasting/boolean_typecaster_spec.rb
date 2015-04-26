@@ -5,7 +5,7 @@ require "bigdecimal"
 module ActiveAttr
   module Typecasting
     describe BooleanTypecaster do
-      subject(:typecaster) { described_class.new }
+      subject(:typecaster) { described_class }
 
       describe "#call" do
         it "returns true for true" do

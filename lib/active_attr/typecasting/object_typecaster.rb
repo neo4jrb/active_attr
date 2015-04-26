@@ -17,7 +17,7 @@ module ActiveAttr
       # @return [Object] Whatever you passed in
       #
       # @since 0.5.0
-      def call(value)
+      def self.call(value)
         value
       end
     end

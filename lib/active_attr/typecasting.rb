@@ -59,8 +59,7 @@ module ActiveAttr
     #
     # @since 0.6.0
     def typecaster_for(type)
-      typecaster = TYPECASTER_MAP[type]
-      typecaster.new if typecaster
+      TYPECASTER_MAP[type]
     end
   end
 end

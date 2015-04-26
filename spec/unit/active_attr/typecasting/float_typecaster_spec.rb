@@ -4,7 +4,7 @@ require "active_attr/typecasting/float_typecaster"
 module ActiveAttr
   module Typecasting
     describe FloatTypecaster do
-      subject(:typecaster) { described_class.new }
+      subject(:typecaster) { described_class }
 
       describe "#call" do
         it "returns the original float for a Float" do

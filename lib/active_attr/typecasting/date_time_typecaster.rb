@@ -23,7 +23,7 @@ module ActiveAttr
       # @return [DateTime, nil] The result of typecasting
       #
       # @since 0.5.0
-      def call(value)
+      def self.call(value)
         value.to_datetime if value.respond_to? :to_datetime
       end
     end

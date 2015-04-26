@@ -4,7 +4,7 @@ require "active_attr/typecasting/integer_typecaster"
 module ActiveAttr
   module Typecasting
     describe IntegerTypecaster do
-      subject(:typecaster) { described_class.new }
+      subject(:typecaster) { described_class }
 
       describe "#call" do
         it "returns the original integer for a FixNum" do

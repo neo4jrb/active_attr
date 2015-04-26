@@ -4,7 +4,7 @@ require "active_attr/typecasting/date_time_typecaster"
 module ActiveAttr
   module Typecasting
     describe DateTimeTypecaster do
-      subject(:typecaster) { described_class.new }
+      subject(:typecaster) { described_class }
 
       describe "#call" do
         it "returns the original DateTime for a DateTime" do

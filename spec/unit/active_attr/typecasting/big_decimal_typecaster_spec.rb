@@ -4,7 +4,7 @@ require "active_attr/typecasting/big_decimal_typecaster"
 module ActiveAttr
   module Typecasting
     describe BigDecimalTypecaster do
-      subject(:typecaster) { described_class.new }
+      subject(:typecaster) { described_class }
 
       describe "#call" do
         it "returns the original BigDecimal for a BigDecimal" do
